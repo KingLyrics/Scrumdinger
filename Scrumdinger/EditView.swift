@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var scrum = MockData.emptyScrum
+    @Binding var scrum: DailyScrumModel 
     @State private var newAttendeeName = ""
     
     var body: some View {
@@ -24,7 +24,8 @@ struct EditView: View {
                     Text("\(scrum.lengthInMinutes) Minutes")
 
                 }
-               
+                ThemePicker(selection: $scrum.theme)
+
             }
             Section("Attendees"){
                 ForEach(scrum.attendees){attendee in
@@ -52,5 +53,5 @@ struct EditView: View {
 }
 
 #Preview {
-    EditView()
+    EditView(scrum: .constant(MockData().sampleData[0]))
 }
