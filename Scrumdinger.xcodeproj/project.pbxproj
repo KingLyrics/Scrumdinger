@@ -12,6 +12,7 @@
 		A8C901842BA581750096E7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C901832BA581750096E7CF /* Assets.xcassets */; };
 		A8C901872BA581750096E7CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C901862BA581750096E7CF /* Preview Assets.xcassets */; };
 		A8C9018F2BA584570096E7CF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9018E2BA584570096E7CF /* Theme.swift */; };
+		A8C901912BA585960096E7CF /* DailyScrumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901902BA585960096E7CF /* DailyScrumModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A8C901832BA581750096E7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8C901862BA581750096E7CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8C9018E2BA584570096E7CF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A8C901902BA585960096E7CF /* DailyScrumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A8C9018E2BA584570096E7CF /* Theme.swift */,
+				A8C901902BA585960096E7CF /* DailyScrumModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				A8C9018F2BA584570096E7CF /* Theme.swift in Sources */,
 				A8C901822BA581720096E7CF /* ContentView.swift in Sources */,
+				A8C901912BA585960096E7CF /* DailyScrumModel.swift in Sources */,
 				A8C901802BA581720096E7CF /* ScrumdingerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
