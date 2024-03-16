@@ -30,6 +30,12 @@ struct DetailView: View {
                         .clipShape(.rect(cornerRadius: 4))
                 }
             }
+            
+            Section("Attendees"){
+                ForEach(scrum.attendees){attendee in
+                    Label(attendee.name, systemImage: "person")
+                }
+            }
         }
     }
 }
