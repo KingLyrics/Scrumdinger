@@ -14,6 +14,7 @@
 		A8C9018F2BA584570096E7CF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9018E2BA584570096E7CF /* Theme.swift */; };
 		A8C901912BA585960096E7CF /* DailyScrumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901902BA585960096E7CF /* DailyScrumModel.swift */; };
 		A8C901932BA586E50096E7CF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901922BA586E50096E7CF /* CardView.swift */; };
+		A8C901952BA58A660096E7CF /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901942BA58A660096E7CF /* LabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A8C9018E2BA584570096E7CF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A8C901902BA585960096E7CF /* DailyScrumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrumModel.swift; sourceTree = "<group>"; };
 		A8C901922BA586E50096E7CF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A8C901942BA58A660096E7CF /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A8C9017F2BA581720096E7CF /* ScrumdingerApp.swift */,
 				A8C901812BA581720096E7CF /* ContentView.swift */,
 				A8C901922BA586E50096E7CF /* CardView.swift */,
+				A8C901942BA58A660096E7CF /* LabelStyle.swift */,
 				A8C9018D2BA584420096E7CF /* Models */,
 				A8C901832BA581750096E7CF /* Assets.xcassets */,
 				A8C901852BA581750096E7CF /* Preview Content */,
@@ -158,6 +161,7 @@
 				A8C901822BA581720096E7CF /* ContentView.swift in Sources */,
 				A8C901912BA585960096E7CF /* DailyScrumModel.swift in Sources */,
 				A8C901802BA581720096E7CF /* ScrumdingerApp.swift in Sources */,
+				A8C901952BA58A660096E7CF /* LabelStyle.swift in Sources */,
 				A8C901932BA586E50096E7CF /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
