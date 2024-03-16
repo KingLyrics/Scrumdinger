@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditView: View {
     @State private var scrum = MockData.emptyScrum
+    @State private var newAttendeeName = ""
     
     var body: some View {
         Form{
@@ -22,6 +23,28 @@ struct EditView: View {
                     Spacer()
                     Text("\(scrum.lengthInMinutes) Minutes")
 
+                }
+               
+            }
+            Section("Attendees"){
+                ForEach(scrum.attendees){attendee in
+                    Text(attendee.name)
+                }
+                .onDelete{ indicies in
+                    scrum.attendees.remove(atOffsets: indicies)
+                }
+                HStack{
+                    TextField("New Attendee", text: $newAttendeeName)
+                    Button(action: {
+                        withAnimation{
+                            let attendee = Attendee( name: newAttendeeName)
+                            scrum.attendees.append(attendee)
+                            newAttendeeName = ""
+                        }
+                    }, label: {
+                        Image(systemName: "plus.circle.fill")
+                    })
+                    .disabled(newAttendeeName.isEmpty)
                 }
             }
         }
