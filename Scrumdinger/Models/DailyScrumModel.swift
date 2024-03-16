@@ -13,6 +13,16 @@ struct DailyScrumModel:Identifiable{
     var title:String
     var attendees:[Attendee]
     var lengthInMinutes:Int
+    
+    var lengthInMinutesAsDouble:Double{
+        get{
+            Double(lengthInMinutes)
+        }
+        
+        set{
+            lengthInMinutes = Int(newValue)
+        }
+    }
     var theme:Theme
     
     
@@ -22,6 +32,7 @@ struct DailyScrumModel:Identifiable{
         self.attendees = attendees.map({Attendee(name: $0)})
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
+        
     }
 }
 
@@ -52,4 +63,8 @@ struct MockData {
                         theme: .poppy)
         
     ]
+    
+    static var emptyScrum:DailyScrumModel{
+        DailyScrumModel(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
+    }
 }

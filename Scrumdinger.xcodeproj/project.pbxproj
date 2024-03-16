@@ -17,6 +17,7 @@
 		A8C901952BA58A660096E7CF /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901942BA58A660096E7CF /* LabelStyle.swift */; };
 		A8C901972BA58C250096E7CF /* ScrumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901962BA58C250096E7CF /* ScrumList.swift */; };
 		A8C901992BA5932F0096E7CF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C901982BA5932F0096E7CF /* DetailView.swift */; };
+		A8C9019C2BA59C220096E7CF /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9019B2BA59C220096E7CF /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A8C901942BA58A660096E7CF /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 		A8C901962BA58C250096E7CF /* ScrumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumList.swift; sourceTree = "<group>"; };
 		A8C901982BA5932F0096E7CF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A8C9019B2BA59C220096E7CF /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				A8C901812BA581720096E7CF /* MeetingView.swift */,
 				A8C901922BA586E50096E7CF /* CardView.swift */,
 				A8C901982BA5932F0096E7CF /* DetailView.swift */,
+				A8C9019B2BA59C220096E7CF /* EditView.swift */,
 				A8C901962BA58C250096E7CF /* ScrumList.swift */,
 				A8C901942BA58A660096E7CF /* LabelStyle.swift */,
 				A8C9018D2BA584420096E7CF /* Models */,
@@ -168,6 +171,7 @@
 				A8C9018F2BA584570096E7CF /* Theme.swift in Sources */,
 				A8C901822BA581720096E7CF /* MeetingView.swift in Sources */,
 				A8C901912BA585960096E7CF /* DailyScrumModel.swift in Sources */,
+				A8C9019C2BA59C220096E7CF /* EditView.swift in Sources */,
 				A8C901802BA581720096E7CF /* ScrumdingerApp.swift in Sources */,
 				A8C901952BA58A660096E7CF /* LabelStyle.swift in Sources */,
 				A8C901932BA586E50096E7CF /* CardView.swift in Sources */,
