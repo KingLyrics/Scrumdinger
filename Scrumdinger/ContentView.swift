@@ -23,7 +23,6 @@ struct ContentView: View {
                 }
             }
             .font(.subheadline)
-            
             Circle()
                 .strokeBorder(lineWidth: 24)
             
