@@ -10,7 +10,7 @@ import SwiftUI
 struct MeetingHeaderView: View {
     let secondsElapsed:Int
     let secondsRemaining:Int
-    
+    let theme:Theme
     private var totalSeconds:Int{
         secondsElapsed + secondsRemaining
     }
@@ -25,24 +25,31 @@ struct MeetingHeaderView: View {
     }
     
     var body: some View {
-        ProgressView(value: progress)
-        HStack {
-            VStack(alignment:.leading) {
-                Text("Seconds Elapsed")
-                Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
+        VStack {
+            ProgressView(value: progress)
+                .tint(theme.mainColor)
+                       .padding()
+                       .background(Color.black.opacity(0.9))
+                       .clipShape(.rect(cornerRadius: 10))
+            HStack {
+                VStack(alignment:.leading) {
+                    Text("Seconds Elapsed")
+                    Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
+                }
+                Spacer()
+                VStack(alignment: .trailing) {
+                    Text("Seconds Remaining")
+                    Label("\(secondsRemaining)", systemImage: "hourglass.bottomhalf.fill")
+                }
             }
-            Spacer()
-            VStack(alignment: .trailing) {
-                Text("Seconds Remaining")
-                Label("\(secondsRemaining)", systemImage: "hourglass.bottomhalf.fill")
-            }
+            .font(.subheadline)
         }
-        .font(.subheadline)
-
+        .padding([.top, .horizontal])
 
     }
+    
 }
 
 #Preview {
-    MeetingHeaderView(secondsElapsed:100 , secondsRemaining: 180)
+    MeetingHeaderView(secondsElapsed:100 , secondsRemaining: 180, theme: .bubblegum)
 }
