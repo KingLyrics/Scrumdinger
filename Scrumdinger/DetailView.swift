@@ -48,7 +48,7 @@ struct DetailView: View {
         .navigationTitle(scrum.title)
         .sheet(isPresented: $isPresentingEditView){
             NavigationStack{
-                EditView(scrum: $scrum)
+                EditView(scrum: $editingScrum)
                     .navigationTitle(scrum.title)
                     .toolbar{
                         ToolbarItem(placement: .cancellationAction) {
@@ -60,7 +60,7 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done"){
                                 isPresentingEditView = false
-                                 editingScrum = scrum
+                                scrum = editingScrum
                             }
                         }
                     }
